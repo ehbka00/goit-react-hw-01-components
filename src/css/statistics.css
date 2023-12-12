@@ -1,0 +1,23 @@
+.statistics {
+    background-color: #fff;
+    width: 347px;
+    margin-top: 35px;
+}
+.statistics h2 {
+    text-align: center;
+    padding: 28px 0;
+}
+ul.stat-list {
+    display: flex;
+}
+ul.stat-list li {
+    padding: 15px 0;
+    width: 86px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ul.stat-list li span:last-child{
+    font-size: 22px;
+    padding-top: 3px;
+}

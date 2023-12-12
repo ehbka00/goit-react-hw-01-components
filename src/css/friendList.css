@@ -1,0 +1,29 @@
+ul.friend-list {
+    margin-top: 40px;
+}
+ul.friend-list li {
+    display: flex;
+    align-items: center;
+    width: 307px;
+    background-color: white;
+    border-radius: 2px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+}
+ul.friend-list li img.avatar {
+    width: 72px;
+    height: 69px;
+    margin: 0 15px;
+}
+
+.online, .offline {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; 
+}
+.online {
+    background-color: green;
+}
+.offline {
+    background-color: rgb(128, 0, 0);
+}

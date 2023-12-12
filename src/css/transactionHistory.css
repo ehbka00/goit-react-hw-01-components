@@ -1,0 +1,25 @@
+table.transaction-history {
+    width: 543px;
+    height: 186px;
+}
+
+table.transaction-history thead {
+    background-color: #00adc4;
+    color: #fff;
+    padding: 10px 0;
+}
+table.transaction-history thead th {
+    height: 30px;
+}
+table.transaction-history td {
+    text-align: center;
+    padding: 5px 0;
+}
+
+.white {
+    background: #ffffff;
+}
+
+.lightgray {
+    background: #d9dee3;
+}
