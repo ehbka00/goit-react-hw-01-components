@@ -1,29 +1,25 @@
+
+
 export const Profile = ({...data}) => (
-    <div class="profile">
-  <div class="description">
+    <div className="profile">
+  <div className="description">
     <img
       src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
       alt="User avatar"
-      class="avatar"
+      className="avatar"
     />
-    <p class="name">{data.username}</p>
-    <p class="tag">{data.tag}</p>
-    <p class="location">{data.location}</p>
+    <p className="name">{data.username}</p>
+    <p className="tag">{data.tag}</p>
+    <p className="location">{data.location}</p>
   </div>
 
-  <ul class="stats">
-    <li>
-      <span class="label">Followers</span>
-      <span class="quantity">{data.stats.followers}</span>
-    </li>
-    <li>
-      <span class="label">Views</span>
-      <span class="quantity">{data.stats.views}</span>
-    </li>
-    <li>
-      <span class="label">Likes</span>
-      <span class="quantity">{data.stats.likes}</span>
-    </li>
+  <ul className="stats">
+  {Object.entries(data.stats).map(([key, value]) => (
+        <li key={key}>
+          <span className="label">{key}</span>
+          <span className="quantity">{value}</span>
+        </li>
+      ))}
   </ul>
 </div>
 );
